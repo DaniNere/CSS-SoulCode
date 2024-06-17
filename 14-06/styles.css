@@ -1,62 +1,76 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
+nav ul li a:hover {
+    color: #ffd700; /* Cor do hover (amarelo ou outra cor de destaque) */
+}
+
+/* Estilos da seção principal */
 main {
-    padding: 20px;
+    background-image: url('img/background.jpg'); /* Substitua com sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #111010;
 }
 
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Estilos do rodapé */
 footer {
     background-color: #333;
-    color: #fff;
+    color: #ccab17;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* Estilos específicos */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-form {
-    max-width: 400px
 }
