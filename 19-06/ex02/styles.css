@@ -23,12 +23,29 @@ header h1 {
     margin: 0;
 }
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 main {
     padding: 1rem;
 }
-.nav{
+
+.nav ul {
     display: flex;
-    flex-direction: row;
+    list-style: none;
+
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration-line: underline;
 }
 
 .intro {
@@ -38,8 +55,9 @@ main {
 .gallery {
     display: flex; /* Utiliza flexbox para alinhar os cards lado a lado */
     flex-direction: row;
-    gap: 20px; /* Espaçamento entre os cards */
+    gap: 30px; /* Espaçamento entre os cards */
     flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+
 }
 
 .card {
@@ -79,7 +97,6 @@ main {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
 
 footer {
     background-color: #333;
