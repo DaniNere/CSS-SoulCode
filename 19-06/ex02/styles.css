@@ -1,0 +1,125 @@
+/* Estilos básicos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  } 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4e4848;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.intro {
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: flex; /* Utiliza flexbox para alinhar os cards lado a lado */
+    flex-direction: row;
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+}
+
+.card {
+    max-width: 300px; /* Largura máxima dos cards */
+    flex-direction: row;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.card-text {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.images {
+    background-color: aqua;
+    display: flex;
+    gap: 1rem;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    background-color: #ccc;
+    padding: 2rem;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #d80391;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 16px;
+    }
+  
+    header h1 {
+        font-size: 2.5rem;
+    }
+  
+    main {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 8px;
+    }
+  
+    header h1 {
+        font-size: 2rem;
+    }
+  
+    .intro p {
+        font-size: 1rem;
+    }
+  
+    .image {
+        padding: 1rem;
+    }
+}
