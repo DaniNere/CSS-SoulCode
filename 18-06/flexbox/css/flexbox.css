@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.item-1 {
+
+    background-color: rgb(129, 202, 178);
+}
+
+.item-2 {
+
+    background-color: rgb(129, 172, 45);
+}
+
+.item-3 {
+
+    background-color: rgb(126, 126, 150);
+}
+
+.item-4 {
+
+    background-color: rgb(255, 127, 202);
+}
+
+.item-1, .item-2, .item-3, .item-4{
+width: 200px;
+padding: 8px;
+
+}
+.container {
+    background-color: rgb(139, 39, 0);
+    padding: 9px;
+    /*
+    o display ativa o flex box
+    */
+    display: flex;
+    /*Define qual o tipo de container row ou colunn */
+    flex-direction: row;
+    /*quebra de linha do conteiner ao faltar espaço na página*/
+    flex-wrap: nowrap;
+    /* Ajustar os elementos no eixo main, temos várias opções de ajuste ver documentação */
+    justify-content: space-around;
+}
+    
